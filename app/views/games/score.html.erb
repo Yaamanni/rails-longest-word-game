@@ -1,0 +1,25 @@
+<%# The goal of this challenge is to write a simplified version of this game from the terminal where:
+
+You are given a random set of letters.
+You have to enter the longest english word you can find using only letters in the grid.
+After typing your answer, you get your score combined with the time you took, and eventually an error message if you failed. %>
+<h1>********* Welcome to the longest word-game! *********</h1>
+
+<p>
+<br>
+Here is your grid:
+<%= params[:letters] %>
+<br>
+
+<br>
+Now your results
+<br>
+<br>
+Your word: <%=  params[:answer] %>
+<br>
+Time Taken to answer:
+<br>
+Your score: <%= @score %>
+<br>
+Message: <%= @message %>
+</p>
